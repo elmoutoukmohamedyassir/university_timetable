@@ -7,7 +7,7 @@ from schedule import Schedule
 
 # Create objects
 room1 = Room("Room A", 40, ["Projector"])
-teacher1 = Teacher(1, "Dr. Smith")
+teacher1 = Teacher(1, "saad eddine abarra")
 course1 = Course("Databases", "Lecture")
 timeslot1 = TimeSlot("Monday", 8, 10)
 
