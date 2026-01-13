@@ -16,10 +16,10 @@ class Schedule:
 
     def add_session(self, session):
         if self.detect_conflict(session):
-            print("❌ Conflict detected. Session not added.")
+            print(" Conflict detected. Session not added.")
             return False
         self.sessions.append(session)
-        print("✅ Session added successfully.")
+        print(" Session added successfully.")
         return True
 
     def display_schedule(self):
