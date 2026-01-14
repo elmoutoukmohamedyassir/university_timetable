@@ -3,5 +3,5 @@ class Major :
         self.name = name
         self.students = []
         self.courses = []
-        self.groups=[]
+        self.groups=[] # Liste d'objets de type Groupe
         self.schedule = None
