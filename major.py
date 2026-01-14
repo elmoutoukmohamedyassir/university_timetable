@@ -3,4 +3,5 @@ class Major :
         self.name = name
         self.students = []
         self.courses = []
+        self.groups=[]
         self.schedule = None
