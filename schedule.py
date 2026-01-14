@@ -1,9 +1,10 @@
+from constraint_manager import ConstraintManager
 class Schedule:
     def __init__(self):
         self.sessions = []
 
     def add_session(self, session):
-        if self.detect_conflict(session):
+        if self.constraint_manager.detect_conflict(session):
             print(" Conflict detected. Session not added.")
             return False
         self.sessions.append(session)
