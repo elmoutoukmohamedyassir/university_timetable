@@ -4,3 +4,5 @@ class Major :
         self.courses = []
         self.groups=[] # Liste d'objets de type Groupe
         self.schedule = None
+    def add_group(self, new_group):
+        self.groups.append(new_group)
