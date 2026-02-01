@@ -1,10 +1,10 @@
 # Importing needed classes
 from classes.course import Course
-from room import Room
-from session import Session
+from classes.room import Room
+from classes.session import Session
 from classes.major import Major
 from classes.timeslot import TimeSlot
-from schedule import Schedule
+from classes.schedule import Schedule
 
 def generate_default_timeslots():
     slots =[]
