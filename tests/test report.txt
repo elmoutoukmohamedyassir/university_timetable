@@ -1,0 +1,26 @@
+TEST REPORT – Timetable Management System
+
+Test 1: Application launch
+Action: Run main.py
+Expected result: Role selection window appears
+Result: OK
+
+Test 2: Role selection
+Action: Select Student or Teacher
+Expected result: Main menu opens with selected role displayed
+Result: OK
+
+Test 3: Consult timetable
+Action: Click "Consult Timetable"
+Expected result: New window opens displaying the timetable
+Result: OK
+
+Test 4: Export timetable
+Action: Click "Export Timetable (TXT)"
+Expected result: timetable.txt is created in exports folder
+Result: OK
+
+Test 5: Exit application
+Action: Click "Exit"
+Expected result: Application closes correctly
+Result: OK
