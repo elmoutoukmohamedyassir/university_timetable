@@ -18,8 +18,25 @@ def reservation_request():
     day = input("Day: ")
     time = input("Time: ")
 
-    print("\nReservation request sent successfully ")
-    print(f"Course: {course}, Day: {day}, Time: {time}")
+    edt.append({
+        "day": day,
+        "timeslot": time,
+        "course": course,
+        "room": "TBD",
+        "teacher": "TBD"
+    })
+
+    # Export updated timetable to exports/timetable.txt
+    import os
+    os.makedirs("exports", exist_ok=True)
+    with open("exports/timetable.txt", "w") as f:
+        for session in edt:
+            f.write(
+                f"{session['day']} | {session['timeslot']} | "
+                f"{session['course']} | {session['room']} | {session['teacher']}\n"
+            )
+
+    print("\nReservation request sent and timetable updated successfully!")
 
 
 def menu(role):
