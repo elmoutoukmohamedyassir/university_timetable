@@ -12,7 +12,7 @@ class Schedule:
         return True
 
     def display_schedule(self):
-        for s in self.sessions:
+        for s in self.sessions: 
             print(
                 f"{s.course.name} ({s.course.course_type}) | "
                 f"{s.timeslot.day} {s.timeslot.start_time}-{s.timeslot.end_time} | "
