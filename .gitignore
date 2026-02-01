@@ -1,5 +1,4 @@
 __pycache__/
 *.pyc
 exports/
-constraint.py
 test.py

@@ -20,4 +20,13 @@ def get_capacity(room):
     return room.capacity
 
 def generate_timetables(majors, rooms, my_schedule):
-    pass
+    manager = ConstraintManager(my_schedule)
+    all_slots = generate_default_timeslots()
+
+    for major in majors:
+        for course in major.courses:
+            for slot in all_slots:
+                if manager.check_teacher_availability(course.teacher, slot):
+                    
+
+
