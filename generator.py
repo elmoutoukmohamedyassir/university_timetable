@@ -48,8 +48,8 @@ def generate_timetables(majors, rooms, my_schedule):
 
 # --- TEST BLOCK ---
 if __name__ == "__main__":
-    from teacher import Teacher
-    from student import Student 
+    from classes.teacher import Teacher
+    from classes.student import Student 
     # Ensure student.py is in the folder
 
     # 1. Create Rooms
