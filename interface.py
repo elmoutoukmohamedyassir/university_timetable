@@ -40,3 +40,8 @@ def menu(role):
             break
         else:
             print("Invalid choice, try again.")
+
+
+if __name__ == "__main__":
+    role = "student"  # you can change this if needed
+    menu(role)
