@@ -1,9 +1,9 @@
 # Importing needed classes
-from course import Course
+from classes.course import Course
 from room import Room
 from session import Session
-from major import Major
-from timeslot import TimeSlot
+from classes.major import Major
+from classes.timeslot import TimeSlot
 from schedule import Schedule
 
 def generate_default_timeslots():
