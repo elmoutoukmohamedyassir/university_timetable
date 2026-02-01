@@ -1,4 +1,4 @@
-from user import User
+from classes.user import User
 
 class Teacher(User):
     def __init__(self, user_id, name, max_hours=20):
